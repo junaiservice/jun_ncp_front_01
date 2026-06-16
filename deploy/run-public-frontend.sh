@@ -5,7 +5,7 @@ set -e
 IMAGE_NAME="my-diary-frontend"
 CONTAINER_NAME="my-diary-frontend"
 #Private 서버의 사설ip 설정
-BACKEND_HOST="10.10.2.6"
+BACKEND_HOST="${BACKEND_HOST:-10.10.2.6}"
 
 cd "$(dirname "$0")/.."
 # 기존 컨테이너 중지/작제하는 구문

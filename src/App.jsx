@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
-
+//하나는 클라우드용, 또 하나는 로컬용
 const API_BASE_URL = "/api";
+
+//const API_BASE_URL = "http://localhost:3000/api";
 
 function App() {
   const [diaries, setDiaries] = useState([]);
